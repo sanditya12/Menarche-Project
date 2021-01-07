@@ -1,0 +1,24 @@
+@import "../variables";
+.nav {
+  color: $mainGreen;
+  padding: 0 100px;
+  background-color: $primaryFont;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-family: $primaryFont;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-links {
+  text-decoration: none;
+  width: 40%;
+  text-align: right;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}

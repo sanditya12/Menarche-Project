@@ -1,0 +1,28 @@
+@import "../variables";
+
+.about {
+  font-family: $primaryFont;
+  color: $secondaryPink;
+  background-color: #ffffff;
+  padding: 15vh 20vh 20vh;
+
+  h1 {
+    top: 30px;
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 300;
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.about__body {
+  border: 3px solid $mainGreen;
+  font-weight: 500;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 16vh;
+}

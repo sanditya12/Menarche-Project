@@ -1,16 +1,15 @@
-$mainGreen: #6eacb7;
-$primaryFont: "Montserrat", sans-serif;
-$mainPink: #fdcece;
+@import "../variables";
 body {
   background-color: $mainPink;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 .hero {
-  height: 100vh;
+  height: 90vh;
+  margin-bottom: 20vh;
   width: 100vw;
   max-width: 1920px;
-  overflow-x: hidden;
   display: flex;
   .heading {
     flex-basis: 0;
@@ -23,7 +22,7 @@ body {
       margin-left: 20%;
       h1 {
         font-family: $primaryFont;
-        font-size: 50px;
+        font-size: 3.5rem;
         font-weight: 800;
         color: #ffffff;
         max-width: 700px;
@@ -73,6 +72,7 @@ body {
     }
   }
 }
+
 .OutlineObject {
   border-width: 3px;
   border-style: solid;
