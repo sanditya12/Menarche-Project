@@ -1,9 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { appearVariant } from "./variants";
 
-const Picture = ({ image, height, width, top, bottom, left, right }) => {
+const Picture = ({ image, height, width, top, bottom, left, right, time }) => {
   return (
-    <div
+    <motion.div
       className="imageFrame"
+      variants={appearVariant(time)}
+      initial="hidden"
+      animate="visible"
       style={{
         height: height,
         width: width,
@@ -14,7 +19,7 @@ const Picture = ({ image, height, width, top, bottom, left, right }) => {
       }}
     >
       <img className="image" src={image} alt="picture" />
-    </div>
+    </motion.div>
   );
 };
 

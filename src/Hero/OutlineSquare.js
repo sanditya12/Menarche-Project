@@ -1,7 +1,9 @@
 import React from "react";
-const OutlineSquare = ({ width, height, top, bottom, right, left }) => {
+import { motion } from "framer-motion";
+import { appearVariant } from "./variants";
+const OutlineSquare = ({ width, height, top, bottom, right, left, time }) => {
   return (
-    <div
+    <motion.div
       className="OutlineObject"
       style={{
         width: width,
@@ -11,6 +13,9 @@ const OutlineSquare = ({ width, height, top, bottom, right, left }) => {
         right: right,
         left: left,
       }}
+      variants={appearVariant(time)}
+      initial="hidden"
+      animate="visible"
     />
   );
 };
